@@ -1119,7 +1119,8 @@ img {
   gap: 10px;
 }
 
-.social-links a {
+.social-links a,
+.social-links .social-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;

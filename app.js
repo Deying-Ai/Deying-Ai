@@ -142,6 +142,9 @@
   if (data.links.github) {
     socialLinks.push({ label: "GitHub", url: data.links.github });
   }
+  if (data.links.douyin) {
+    socialLinks.push({ label: `抖音 @${data.links.douyin}`, url: "" });
+  }
   if (data.links.linkedin) {
     socialLinks.push({ label: "LinkedIn", url: data.links.linkedin });
   }
@@ -154,13 +157,19 @@
 
   qsa("[data-social-links]").forEach((container) => {
     container.innerHTML = socialLinks
-      .map(
-        (link) => `
-          <a href="${escapeHtml(link.url)}" ${link.url.startsWith("http") ? 'target="_blank" rel="noreferrer"' : ""}>
-            <span>${escapeHtml(link.label)}</span>
-            <svg class="icon" aria-hidden="true"><use href="#icon-external"></use></svg>
-          </a>
-        `,
+      .map((link) =>
+        link.url
+          ? `
+            <a href="${escapeHtml(link.url)}" ${link.url.startsWith("http") ? 'target="_blank" rel="noreferrer"' : ""}>
+              <span>${escapeHtml(link.label)}</span>
+              <svg class="icon" aria-hidden="true"><use href="#icon-external"></use></svg>
+            </a>
+          `
+          : `
+            <span class="social-link">
+              <span>${escapeHtml(link.label)}</span>
+            </span>
+          `,
       )
       .join("");
   });
@@ -192,17 +201,15 @@
       },
       {
         keys: ["项目", "作品", "案例", "做什么", "project", "work", "portfolio"],
-        answer: `目前档案里有 ${data.projects.length} 个代表项目：${data.projects
-          .map((item) => item.title)
-          .join("、")}。它们主要围绕 AI 产品、智能自动化和知识系统。`,
+        answer: `目前档案里展示的是“${data.projects[0]?.title || "AI 个人档案"}”。更多真实作品和内容会继续补充。`,
       },
       {
         keys: ["工具", "技术", "技能", "stack", "skill", "tech", "会什么"],
-        answer: `常用工具与技术包括 ${data.stack.join("、")}。我的重点不是工具本身，而是用它们把想法快速变成可验证的产品。`,
+        answer: `我围绕 ${data.stack.join("、")} 持续实践，重点是让 AI 真正进入日常任务，而不只是停留在工具清单里。`,
       },
       {
         keys: ["关注", "方向", "兴趣", "focus", "interest", "擅长"],
-        answer: `我目前聚焦 ${data.currentFocus}，核心方向是 ${data.focus
+        answer: `我目前聚焦 ${data.currentFocus}，主要内容方向是 ${data.focus
           .map((item) => item.title)
           .join("、")}。${data.focus[0]?.description || ""}`,
       },
@@ -214,7 +221,7 @@
       },
       {
         keys: ["哪里", "地点", "城市", "location", "where", "base"],
-        answer: `我目前位于 ${data.location}，也乐于参与远程协作与跨地域项目。`,
+        answer: `我主要在抖音更新内容，账号名是“${data.links.douyin || data.name}”，创作空间名为“玄野工坊”。`,
       },
       {
         keys: ["谁", "介绍", "名字", "你是谁", "who", "about", "档案"],
