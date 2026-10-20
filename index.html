@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI 原生个人档案：关注 AI 产品、智能工作流与开放实验。" />
+    <meta name="theme-color" content="#0b0d0c" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="AI 个人档案" />
+    <meta property="og:description" content="把复杂问题，变成简单好用的产品。" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <title>AI 个人档案</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=20261020-6" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <svg class="icon-library" aria-hidden="true">
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path d="M4 7h16M4 12h16M4 17h16" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="m6 6 12 12M18 6 6 18" />
+      </symbol>
+      <symbol id="icon-arrow-up-right" viewBox="0 0 24 24">
+        <path d="M7 17 17 7M7 7h10v10" />
+      </symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+        <path d="M5 12h14M13 6l6 6-6 6" />
+      </symbol>
+      <symbol id="icon-sparkles" viewBox="0 0 24 24">
+        <path d="m12 3-1.4 4.1a5.5 5.5 0 0 1-3.5 3.5L3 12l4.1 1.4a5.5 5.5 0 0 1 3.5 3.5L12 21l1.4-4.1a5.5 5.5 0 0 1 3.5-3.5L21 12l-4.1-1.4a5.5 5.5 0 0 1-3.5-3.5L12 3Z" />
+        <path d="M5 3v4M3 5h4M19 17v4M17 19h4" />
+      </symbol>
+      <symbol id="icon-send" viewBox="0 0 24 24">
+        <path d="m22 2-7 20-4-9-9-4Z" />
+        <path d="M22 2 11 13" />
+      </symbol>
+      <symbol id="icon-copy" viewBox="0 0 24 24">
+        <rect width="14" height="14" x="8" y="8" rx="2" />
+        <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m20 6-11 11-5-5" />
+      </symbol>
+      <symbol id="icon-external" viewBox="0 0 24 24">
+        <path d="M15 3h6v6M10 14 21 3" />
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <rect width="20" height="16" x="2" y="4" rx="2" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+      </symbol>
+      <symbol id="icon-location" viewBox="0 0 24 24">
+        <path d="M20 10c0 4.99-5.54 10.2-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.2 4 14.99 4 10a8 8 0 0 1 16 0Z" />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+    </svg>
+
+    <header class="site-header" data-header>
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="返回首页">
+          <span class="brand-mark" data-monogram>YN</span>
+          <span class="brand-name" data-name>你的名字</span>
+        </a>
+        <nav class="desktop-nav" aria-label="主要导航">
+          <a href="#profile">档案</a>
+          <a href="#focus">方向</a>
+          <a href="#work">项目</a>
+          <a href="#journey">轨迹</a>
+        </nav>
+        <a class="header-link" data-email-link href="https://github.com/Deying-Ai">
+          <span>GitHub</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
+        </a>
+        <button class="menu-button" type="button" aria-label="打开导航" aria-expanded="false" data-menu-button>
+          <svg class="icon menu-open" aria-hidden="true"><use href="#icon-menu"></use></svg>
+          <svg class="icon menu-close" aria-hidden="true"><use href="#icon-close"></use></svg>
+        </button>
+      </div>
+      <nav class="mobile-nav" aria-label="移动端导航" data-mobile-nav>
+        <a href="#profile">档案</a>
+        <a href="#focus">方向</a>
+        <a href="#work">项目</a>
+        <a href="#journey">轨迹</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <canvas class="hero-canvas" aria-hidden="true" data-hero-canvas></canvas>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <div class="hero-kicker reveal">
+            <span class="status-dot"></span>
+            <span>AI-NATIVE PROFILE</span>
+            <span class="kicker-divider">/</span>
+            <span>2026</span>
+          </div>
+
+          <div class="hero-copy">
+            <p class="hero-role reveal" data-title>AI 产品构建者</p>
+            <h1 class="reveal" data-name>你的名字</h1>
+            <p class="hero-tagline reveal" data-tagline>把复杂问题，变成简单好用的产品。</p>
+          </div>
+
+          <div class="hero-meta reveal">
+            <div class="identity-chip">
+              <div class="avatar" data-avatar-wrap>
+                <img data-avatar alt="" hidden />
+                <span data-monogram>YN</span>
+              </div>
+              <div>
+                <span class="meta-label">CURRENT FOCUS</span>
+                <strong data-focus>AI-native products</strong>
+              </div>
+            </div>
+            <a class="scroll-cue" href="#profile">
+              <span>向下探索</span>
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-index" aria-hidden="true">
+          <span>PROFILE</span>
+          <span>01</span>
+        </div>
+      </section>
+
+      <section class="profile-section section" id="profile">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">01 / PROFILE</p>
+            <h2>有好奇心，也有执行力。</h2>
+          </div>
+
+          <div class="profile-layout">
+            <div class="profile-story reveal">
+              <p class="profile-intro" data-intro></p>
+              <div class="availability">
+                <span class="status-dot"></span>
+                <span data-availability>开放合作</span>
+                <span class="availability-note" data-status>正在构建下一件有意思的事</span>
+              </div>
+            </div>
+
+            <div class="profile-panel reveal">
+              <div class="panel-topline">
+                <span>profile.json</span>
+                <button class="icon-button" type="button" aria-label="复制档案摘要" data-copy-profile>
+                  <svg class="icon copy-icon" aria-hidden="true"><use href="#icon-copy"></use></svg>
+                  <svg class="icon check-icon" aria-hidden="true"><use href="#icon-check"></use></svg>
+                </button>
+              </div>
+              <dl class="profile-data">
+                <div>
+                  <dt>role</dt>
+                  <dd data-title>AI 产品构建者</dd>
+                </div>
+                <div>
+                  <dt>base</dt>
+                  <dd data-location>Shanghai, China</dd>
+                </div>
+                <div>
+                  <dt>focus</dt>
+                  <dd data-focus>AI-native products</dd>
+                </div>
+                <div>
+                  <dt>status</dt>
+                  <dd><span class="inline-status"></span><span data-availability>开放合作</span></dd>
+                </div>
+              </dl>
+              <div class="panel-footer">
+                <span>last updated</span>
+                <time datetime="2026-10-20">2026.10.20</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section section" aria-labelledby="guide-title">
+        <div class="section-shell">
+          <div class="guide-frame reveal">
+            <div class="guide-intro">
+              <p class="eyebrow">PROFILE INDEX / LOCAL</p>
+              <h2 id="guide-title">直接问我。</h2>
+              <p>通过本地档案索引，快速了解我的方向、项目与协作方式。</p>
+            </div>
+            <div class="guide-console">
+              <div class="console-head">
+                <div class="console-title">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-sparkles"></use></svg>
+                  <span>AI PROFILE GUIDE</span>
+                </div>
+                <span class="console-state">ONLINE</span>
+              </div>
+              <div class="conversation" aria-live="polite" data-conversation>
+                <div class="message message-bot">
+                  <span class="message-label">PROFILE</span>
+                  <p>你好，我是这份档案的本地索引。可以从经历、项目、技能或联系方式开始。</p>
+                </div>
+              </div>
+              <div class="prompt-chips" data-prompt-chips></div>
+              <form class="ask-form" data-ask-form>
+                <label class="sr-only" for="profile-question">向档案提问</label>
+                <input id="profile-question" name="question" type="text" autocomplete="off" placeholder="关于经历、项目或技能..." />
+                <button type="submit" aria-label="发送问题">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-send"></use></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="focus-section section" id="focus">
+        <div class="section-shell">
+          <div class="section-heading section-heading-row reveal">
+            <div>
+              <p class="eyebrow">02 / FOCUS</p>
+              <h2>在交叉处创造。</h2>
+            </div>
+            <p class="section-aside">产品感、技术力与审美判断，在同一个工作流里发生。</p>
+          </div>
+
+          <div class="focus-grid" data-focus-grid></div>
+        </div>
+      </section>
+
+      <section class="work-section section" id="work">
+        <div class="section-shell">
+          <div class="section-heading section-heading-row reveal">
+            <div>
+              <p class="eyebrow">03 / SELECTED WORK</p>
+              <h2>从问题到答案。</h2>
+            </div>
+            <p class="section-aside">一些正在发生的探索。每个项目都从一个具体问题开始。</p>
+          </div>
+          <div class="project-list" data-project-list></div>
+        </div>
+      </section>
+
+      <section class="stack-section">
+        <div class="stack-label">
+          <span>TOOLKIT</span>
+          <span>常用工具 / 2026</span>
+        </div>
+        <div class="marquee" aria-label="常用工具">
+          <div class="marquee-track" data-stack-track></div>
+        </div>
+      </section>
+
+      <section class="journey-section section" id="journey">
+        <div class="section-shell">
+          <div class="section-heading section-heading-row reveal">
+            <div>
+              <p class="eyebrow">04 / JOURNEY</p>
+              <h2>持续构建，持续校准。</h2>
+            </div>
+          </div>
+          <div class="timeline" data-timeline></div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-inner">
+          <div class="contact-orbit" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p class="eyebrow reveal">05 / NEXT MOVE</p>
+          <h2 class="reveal">一起做点<br />有意义的事。</h2>
+          <div class="contact-actions reveal">
+            <a class="contact-email" data-email-link href="https://github.com/Deying-Ai">
+              <span data-email>github.com/Deying-Ai</span>
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
+            </a>
+            <div class="social-links" data-social-links></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span data-year></span> <span data-name>你的名字</span></span>
+      <span>BUILT WITH CURIOSITY / POWERED BY GITHUB</span>
+      <a href="#top">回到顶部 ↑</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast>已复制档案摘要</div>
+
+    <script src="profile-data.js?v=20261020-6"></script>
+    <script src="app.js?v=20261020-6"></script>
+  </body>
+</html>
