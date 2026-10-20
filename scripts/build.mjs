@@ -79,8 +79,11 @@ const timelineRows = config.timeline
   .join("\n");
 
 const social = [
+  config.links.douyin &&
+    (config.links.douyinUrl
+      ? `[抖音 @${clean(config.links.douyin)}](${config.links.douyinUrl})`
+      : `抖音：${clean(config.links.douyin)}`),
   config.links.github && `[GitHub](${config.links.github})`,
-  config.links.douyin && `抖音：${clean(config.links.douyin)}`,
   config.links.linkedin && `[LinkedIn](${config.links.linkedin})`,
   config.links.x && `[X](${config.links.x})`,
   config.links.email && `[Email](mailto:${config.links.email})`,
