@@ -12,7 +12,7 @@
 **所在地：** 抖音 / 玄野工坊  
 **状态：** <strong>欢迎关注</strong>
 
-[GitHub](https://github.com/Deying-Ai) · 抖音：得应
+[抖音 @得应](https://v.douyin.com/kSBQkHv_2Fs/) · [GitHub](https://github.com/Deying-Ai)
 
 ---
 

@@ -139,11 +139,14 @@
   });
 
   const socialLinks = [];
+  if (data.links.douyin) {
+    socialLinks.push({
+      label: `抖音 @${data.links.douyin}`,
+      url: data.links.douyinUrl || "",
+    });
+  }
   if (data.links.github) {
     socialLinks.push({ label: "GitHub", url: data.links.github });
-  }
-  if (data.links.douyin) {
-    socialLinks.push({ label: `抖音 @${data.links.douyin}`, url: "" });
   }
   if (data.links.linkedin) {
     socialLinks.push({ label: "LinkedIn", url: data.links.linkedin });

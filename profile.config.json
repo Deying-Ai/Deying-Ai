@@ -2,7 +2,7 @@
   "name": "得应",
   "monogram": "得应",
   "handle": "Deying-Ai",
-  "avatar": "assets/deying-avatar.jpg?v=20261020-8",
+  "avatar": "assets/deying-avatar.jpg?v=20261021-9",
   "title": "AI 自媒体创作者",
   "tagline": "把 AI 变成每个人都能上手的生产力。",
   "intro": "你好，我是得应，在抖音分享 AI 工具、效率方法与个人实践。玄野工坊是我的创作空间，这里记录从提问、试验到做出结果的全过程。",
@@ -14,6 +14,7 @@
   "links": {
     "github": "https://github.com/Deying-Ai",
     "douyin": "得应",
+    "douyinUrl": "https://v.douyin.com/kSBQkHv_2Fs/",
     "email": "",
     "linkedin": "",
     "x": ""
