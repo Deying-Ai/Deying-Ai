@@ -46,6 +46,13 @@
       "summary": "一个结合个人介绍、项目展示与本地档案问答的 GitHub Pages 实验。",
       "tags": ["AI Profile", "GitHub Pages", "Web"],
       "url": "https://deying-ai.github.io/Deying-Ai/"
+    },
+    {
+      "index": "002",
+      "title": "AI 视频工作室",
+      "summary": "一个覆盖选题、口播视频制作、质量审核与批量封面的 Codex Plugin。",
+      "tags": ["Codex Plugin", "AI Video", "Batch Covers"],
+      "url": "https://github.com/Deying-Ai/ai-video-studio/releases/latest"
     }
   ],
   "stack": [

@@ -29,6 +29,7 @@
 | # | 项目 | 简介 | 标签 | 链接 |
 | --- | --- | --- | --- | --- |
 | 001 | **AI 个人档案** | 一个结合个人介绍、项目展示与本地档案问答的 GitHub Pages 实验。 | AI Profile · GitHub Pages · Web | [访问](https://deying-ai.github.io/Deying-Ai/) |
+| 002 | **AI 视频工作室** | 一个覆盖选题、口播视频制作、质量审核与批量封面的 Codex Plugin。 | Codex Plugin · AI Video · Batch Covers | [访问](https://github.com/Deying-Ai/ai-video-studio/releases/latest) |
 
 ## 工具 / Toolkit
 

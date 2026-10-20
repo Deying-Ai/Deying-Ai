@@ -63,6 +63,17 @@ window.PROFILE_DATA = {
         "Web"
       ],
       "url": "https://deying-ai.github.io/Deying-Ai/"
+    },
+    {
+      "index": "002",
+      "title": "AI 视频工作室",
+      "summary": "一个覆盖选题、口播视频制作、质量审核与批量封面的 Codex Plugin。",
+      "tags": [
+        "Codex Plugin",
+        "AI Video",
+        "Batch Covers"
+      ],
+      "url": "https://github.com/Deying-Ai/ai-video-studio/releases/latest"
     }
   ],
   "stack": [
