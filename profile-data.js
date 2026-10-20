@@ -60,7 +60,7 @@ window.PROFILE_DATA = {
         "GitHub Pages",
         "Web"
       ],
-      "url": "https://deying-ai.github.io/deying-ai/"
+      "url": "https://deying-ai.github.io/Deying-Ai/"
     }
   ],
   "stack": [

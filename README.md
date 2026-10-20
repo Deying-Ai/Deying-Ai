@@ -28,7 +28,7 @@
 
 | # | 项目 | 简介 | 标签 | 链接 |
 | --- | --- | --- | --- | --- |
-| 001 | **AI 个人档案** | 一个结合个人介绍、项目展示与本地档案问答的 GitHub Pages 实验。 | AI Profile · GitHub Pages · Web | [访问](https://deying-ai.github.io/deying-ai/) |
+| 001 | **AI 个人档案** | 一个结合个人介绍、项目展示与本地档案问答的 GitHub Pages 实验。 | AI Profile · GitHub Pages · Web | [访问](https://deying-ai.github.io/Deying-Ai/) |
 
 ## 工具 / Toolkit
 
